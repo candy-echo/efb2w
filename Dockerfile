@@ -7,5 +7,7 @@ RUN mkdir -p /root/.ehforwarderbot/profiles/default/blueset.telegram
 ADD config.yaml /root/.ehforwarderbot/profiles/default/
 ADD config/config.yaml /root/.ehforwarderbot/profiles/default/blueset.telegram/
 
+ENV EFB_DATA_PATH=/root/.ehforwarderbot/
+
 CMD ehforwarderbot
 
