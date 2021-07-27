@@ -5,6 +5,7 @@ RUN apt-get install -y  python3-pip python3-pil python3-setuptools python3-numpy
 RUN pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave
 RUN mkdir -p /root/.ehforwarderbot/profiles/default/blueset.telegram
 ADD config.yaml  /root/.ehforwarderbot/profiles/default/
+ADD config/config.yaml  ~/efb2w/blueset.telegram/
 
-CMD ehforwarderbot
+CMD ehforwarderbot ~/efb2w/blueset.telegram/:/root/.ehforwarderbot/profiles/default/blueset.telegram/
 
