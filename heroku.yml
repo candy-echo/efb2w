@@ -1,3 +1,5 @@
 build:
   docker:
     web: Dockerfile
+run:
+  web: docker run ~/efb2w/blueset.telegram/:/root/.ehforwarderbot/profiles/default/blueset.telegram/ ehforwarderbot
